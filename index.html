@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G7 Tech | Premium Software Solutions</title>
+  <link rel="icon" type="image/png" href="assets/img/logo.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/navFoote.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+<div class="bg-hero">
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">⬢</span>
+        <span class="logo-text">G7 Tech</span>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="Services.html">Services</a>
+        <a href="Team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+         <a href="blog.html">Blog</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://wa.me/923016871894" class="nav-btn">GET STARTED</a>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h1 class="animate">Building Digital Bridges from <br><span class="gradient-text">Gujranwala to Global 
+Markets</span></h1>
+      <div class="hero-buttons animate">
+        <a href="Services.html" class="btn-primary">Our Services</a>
+        <a href="contact.html" class="btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</div>
+<br>
+
+
+<div class="stats-bar">
+  <div class="container stats-grid">
+    <div class="stat-item animate">
+      <h3>50+</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat-item animate">
+      <h3>20+</h3>
+      <p>Global Clients</p>
+    </div>
+    <div class="stat-item animate">
+      <h3>24/7</h3>
+      <p>Technical Support</p>
+    </div>
+  </div>
+</div>
+
+<section class="services">
+  <div class="container">
+    <div class="section-header animate">
+      <h2>Our Core Expertise</h2>
+      <p>We provide full-stack solutions tailored to your business needs.</p>
+    </div>
+
+    <div class="service-grid">
+      <div class="card animate">
+        <div class="card-icon">🌐</div>
+        <h3>Web Development</h3>
+        <p>Custom, responsive, and SEO-optimized websites using React, Next.js, and modern tech stacks.</p>
+      </div>
+      <div class="card animate">
+        <div class="card-icon">📱</div>
+        <h3>App Development</h3>
+        <p>High-performance Android and iOS applications with seamless user experiences.</p>
+      </div>
+      <div class="card animate">
+        <div class="card-icon">📧</div>
+        <h3>Cloud Solutions</h3>
+        <p>Professional email management and scalable web hosting for maximum uptime.</p>
+      </div>
+      <div class="card animate">
+        <div class="card-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Modern, user-centric designs that turn visitors into loyal customers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta animate">
+  <div class="cta-content">
+    <h2>Accelerate Your Business Growth</h2>
+    <br>
+    <a href="contact.html" class="btn-primary" style="background: #fff; color: #1e3a8a;">Work With Us</a>
+  </div>
+</section>
+
+<footer>
+
+  <div class="footer-top">
+    <div>
+      <h3>G7 TECH</h3>
+      <p>Your trusted digital partner for modern IT and creative services.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+
+    <div>
+      <h3>Contact Info</h3>
+      <p>📍 Gujranwala, Pakistan</p>
+      <p>📞 0301-6871894</p>
+      <p>✉️ info@g7tech.online</p>
+    </div>
+  </div>
+
+
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 G7 TECH. All Rights Reserved.</p>
+  </div>
+
+</footer>
+<a href="https://wa.me/923016871894" class="whatsapp-float" target="_blank">
+  <img src="assets/img/download.jpg" alt="WhatsApp">
+</a>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("show");
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll(".animate").forEach(el => observer.observe(el));
+
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  hamburger.onclick = () => {
+    navLinks.classList.toggle("show");
+    hamburger.classList.toggle("active");
+  };
+</script>
+
+</body>
+</html>

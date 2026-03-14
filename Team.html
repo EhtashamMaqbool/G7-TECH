@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team | G7 Tech</title>
+   <link rel="icon" type="image/png" href="assets/img/logo.jpeg">
+
+  <link rel="stylesheet" href="assets/css/navFoote.css">
+  <link rel="stylesheet" href="assets/css/team.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-logo">
+      <span class="logo-icon">⬢</span>
+      <span class="logo-text">G7 Tech</span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="Services.html">Digital Services</a>
+      <a href="Team.html">Our Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+ 
+      <a href="https://wa.me/923016871894" class="nav-btn">LET’S LEARN TOGETHER</a>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container animate fade-up">
+    <h1>Our Leadership & Team</h1>
+    <p>
+      A passionate team dedicated to delivering innovative digital solutions
+      with creativity, technology, and strategy.
+    </p>
+  </div>
+</section>
+<!-- TEAM SECTION -->
+<section class="team-section">
+  <div class="container">
+
+    <div class="team-grid">
+
+      <!-- MEMBER 1 -->
+      <div class="team-card animate fade-left">
+        <img src="assets/img/bilal.png" alt="Bilal Mirza">
+
+        <h3>Bilal Mirza</h3>
+        <span class="role">Co-Founder & Lead Developer</span>
+
+        <p>
+Bilal Mirza is the Co-Founder and Lead Developer at G7 Tech, bringing deep technical expertise in modern web development, UI/UX engineering, and scalable system design. As the technical backbone of the agency, he is responsible for transforming ideas into high-performing digital products.
+
+Bilal leads development processes, enforces code quality standards, and oversees the implementation of robust architectures that ensure long-term scalability and security. His passion for clean code, emerging technologies, and performance optimization enables G7 Tech to deliver innovative and reliable solutions across diverse projects.
+        </p>
+      </div>
+
+      <!-- MEMBER 2 -->
+     <div class="team-card animate fade-right">
+        <img src="assets/img/sham.jpeg" alt="Ehtasham Maqbool">
+
+        <h3>Ehtasham Maqbool</h3>
+        <span class="role">Founder & CEO</span>
+
+        <p>
+        Ehtasham Maqbool is the Founder of G7 Tech and the driving force behind the agency’s long-term vision and strategic direction. With a strong focus on innovation, quality, and client-centric solutions, he leads the organization with a clear mission to deliver reliable, scalable, and future-ready digital services.
+
+        His expertise spans application development, system architecture, and problem-solving at scale. Ehtasham plays a key role in aligning technical execution with business goals, ensuring that every project reflects efficiency, performance, and modern industry standards. His leadership ensures G7 Tech continuously evolves while maintaining excellence, integrity, and customer trust.
+
+        </p>
+      </div>
+
+
+
+      <!-- MEMBER 3 -->
+             <div class="team-card animate fade-up">
+        <img src="assets/img/mam.png" alt="Hifza Malik">
+
+        <h3>Hifza Malik</h3>
+        <span class="role">Co-Founder & Head of Marketing</span>
+
+        <p>
+         Hifza Malik is the Co-Founder of G7 Tech and leads the marketing, branding, and client engagement strategies of the agency. She plays a pivotal role in shaping the brand’s identity, managing client communications, and driving market outreach through creative and data-driven strategies.
+
+        With a strong focus on digital marketing, brand consistency, and customer experience, Hifza ensures that G7 Tech maintains a professional presence across all platforms. Her leadership bridges the gap between clients and technical teams, ensuring clarity, alignment, and successful project delivery while strengthening long-term client relationships.
+        </p>
+      </div>
+  
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta animate">
+  <h2>Start Your Career Today</h2>
+  <a href="contact.html" class="btn-primary">Join Now</a>
+</section>
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-top">
+    <div>
+      <h3>G7 TECH</h3>
+      <p>Your trusted digital partner for modern IT and creative services.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+
+    <div>
+      <h3>Contact Info</h3>
+      <p>📍 Gujranwala, Pakistan</p>
+      <p>📞 0301-6871894</p>
+      <p>✉️ info@g7tech.online</p>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 G7 TECH. All Rights Reserved.</p>
+  </div>
+
+</footer>
+<!-- SCROLL ANIMATION -->
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  document.querySelectorAll(".animate").forEach(el => {
+    observer.observe(el);
+  });
+
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    hamburger.classList.toggle("active");
+  });
+  
+
+</script>
+
+</body>
+</html>

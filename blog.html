@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Clients | G7 Tech</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/navFoote.css">
+
+  
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-logo">
+      <span class="logo-icon">⬢</span>
+      <span class="logo-text">G7 Tech</span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="Services.html">Digital Services</a>
+      <a href="Team.html">Our Team</a>
+      <a href="contact.html">Contact</a>
+       <a href="blog.html">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="https://wa.me/923016871894" class="nav-btn">LET’S LEARN TOGETHER</a>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </div>
+</header>
+<section class="page-hero">
+            <div class="container">
+                <h1 class="animate fade-up">G7 Tech <span class="gradient-text">Insights</span></h1>
+                <p class="animate fade-up" style="transition-delay: 0.1s;">Empowering businesses with modern digital
+                    solutions and success stories.</p>
+            </div>
+        </section>
+<!-- CLIENT SECTION --><section class="clients-section"> <div class="container"> <div class="section-header animate fade-up"> <span class="about-badge">Portfolio</span> <h2 class="gradient-text">Our Trusted Clients</h2> <p>Collaborating with industry leaders to deliver digital excellence across Pakistan.</p> </div> <div class="client-grid"> <div class="client-card animate fade-up"> <div class="client-info"> <span class="client-category">HEALTHCARE</span> <h3>Care and Cure Hospital</h3> <p>Gujranwala, Pakistan</p> <div class="client-task">Social Media Management & Content Strategy</div> </div> <div class="client-link"> <a href="#">VIEW CASE STUDY ↗</a> </div> </div> <div class="client-card animate fade-up" style="transition-delay: 0.1s;"> <div class="client-info"> <span class="client-category">ShOPPING MALL</span> <h3>Bin Sheikh Mall</h3> <p>Premium Shopping Destination</p> <div class="client-task">Social Media Management & Content Strategy</div> </div> <div class="client-link"> <a href="#">VIEW CASE STUDY ↗</a> </div> </div> <div class="client-card animate fade-up" style="transition-delay: 0.2s;"> <div class="client-info"> <span class="client-category">CONSTRUCTION</span> <h3>Emcon Construction Company</h3> <p>Infrastructure Specialists</p> Web Development & Strategy </div> <div class="client-link"> <a href="#">VIEW CASE STUDY ↗</a> </div> </div> <div class="client-card animate fade-up" style="transition-delay: 0.3s;"> <div class="client-info"> <span class="client-category">TRAVEL & TOURISM</span> <h3>Musafir Travels</h3> <p>Smart Travel Solutions</p> <div class="client-task">Mobile App Development & UI/UX</div> </div> <div class="client-link"> <a href="#">VIEW CASE STUDY ↗</a> </div> </div> <div class="client-card animate fade-up" style="transition-delay: 0.4s;"> <div class="client-info"> <span class="client-category" style="color: #ffcb05;">FOOD & HOSPITALITY</span> <h3>PEAKABO Restaurant</h3> <p>Themed Dining Experience</p> <div class="client-task">Social Media Management & Content Strategy</div> </div> <div class="client-link"> <a href="#">VIEW CASE STUDY ↗</a> </div> </div> </div> </div> </section> <section class="container"> <div class="cta animate fade-up"> <h2>Start Your Project Today</h2> <p style="color: #cbd5e1; margin-bottom: 30px;">Let’s build something extraordinary together.</p> <a href="contact.html" class="btn-primary">Join Now</a> </div> </section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<!-- FOOTER --><!-- FOOTER -->
+<footer>
+
+  <div class="footer-top">
+    <div>
+      <h3>G7 TECH</h3>
+      <p>Your trusted digital partner for modern IT and creative services.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+
+    <div>
+      <h3>Contact Info</h3>
+      <p>📍 Gujranwala, Pakistan</p>
+      <p>📞 0301-6871894</p>
+      <p>✉️ info@g7tech.online</p>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 G7 TECH. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+  // Scroll animation
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  document.querySelectorAll(".animate").forEach(el => observer.observe(el));
+
+  // Counter animation
+  const counters = document.querySelectorAll('.counter');
+
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        const target = +counter.dataset.target;
+        let count = 0;
+
+        const update = () => {
+          if (count < target) {
+            count += target / 100;
+            counter.innerText = Math.ceil(count);
+            requestAnimationFrame(update);
+          } else {
+            counter.innerText = target + "+";
+          }
+        };
+        update();
+        counterObserver.unobserve(counter);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => counterObserver.observe(counter));
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    hamburger.classList.toggle("active");
+  });
+</script>
+</script>
+</body>
+</html>

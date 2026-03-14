@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | G7 Tech</title>
+   <link rel="icon" type="image/png" href="assets/img/logo.jpeg">
+  <link rel="stylesheet" href="assets/css/navFoote.css">
+  <link rel="stylesheet" href="assets/css/servies.css" />
+</head>
+
+<body>
+    
+  <!-- NAVBAR -->
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-logo">
+      <span class="logo-icon">⬢</span>
+      <span class="logo-text">G7 Tech</span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="Services.html">Digital Services</a>
+      <a href="Team.html">Our Team</a>
+      <a href="contact.html">Contact</a>
+       <a href="blog.html">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+    
+      <a href="https://wa.me/923016871894" class="nav-btn">LET’S LEARN TOGETHER</a>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+
+<!-- PAGE HEADER -->
+<section class="page-hero">
+  <div class="container animate fade-up">
+    <h1>Our Services</h1>
+    <p>We provide modern digital & AI-powered solutions</p>
+  </div>
+</section>
+<!-- SERVICES SECTION -->
+
+<!-- SERVICES SECTION -->
+<section class="history-section">
+    <div class="container">
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Web Development</h3>
+                    <p>Building fast, secure, and responsive websites using modern technologies to ensure strong online presence and performance.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Resume & Portfolio</h3>
+                    <p>Designing professional resumes and portfolios that highlight skills, experience, and achievements to stand out.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Web Hosting & Domain</h3>
+                    <p>Providing reliable web hosting, domain registration, setup, and maintenance for smooth website operations.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Professional Email Management</h3>
+                    <p>Setting up and managing professional business emails for secure communication and brand credibility.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Canva Design</h3>
+                    <p>Creating visually appealing designs for social media posts, banners, presentations, and branding using Canva.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Photo Editing</h3>
+                    <p>Enhancing photos through retouching, color correction, background removal, and quality optimization.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>AI Video</h3>
+                    <p>Producing AI-generated videos for marketing, reels, ads, and promotions with engaging visuals and effects.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Social Media Handling</h3>
+                    <p>Managing social media accounts with content creation, scheduling, audience engagement, and growth strategies.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Documentation Services</h3>
+                    <p>Preparing professional documents, reports, proposals, and business content with proper formatting.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- CTA -->
+<section class="cta animate fade-up">
+  <h2>Let’s Build Something Amazing</h2>
+  <a href="contact.html" class="btn">Contact Us</a>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-top">
+    <div>
+      <h3>G7 TECH</h3>
+      <p>Your trusted digital partner for modern IT and creative services.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+
+    <div>
+      <h3>Contact Info</h3>
+      <p>📍 Gujranwala, Pakistan</p>
+      <p>📞 0301-6871894</p>
+      <p>✉️ info@g7tech.online</p>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 G7 TECH. All Rights Reserved.</p>
+  </div>
+
+</footer>
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  document.querySelectorAll(".animate").forEach(el => {
+    observer.observe(el);
+  });
+
+        // Animation for timeline items
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            function checkScroll() {
+                const triggerBottom = window.innerHeight * 0.8;
+                
+                timelineItems.forEach(item => {
+                    const itemTop = item.getBoundingClientRect().top;
+                    
+                    if (itemTop < triggerBottom) {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(50px)';
+                    }
+                });
+            }
+            
+            // Set initial styles
+            timelineItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(50px)';
+                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            // Check on load
+            checkScroll();
+            
+            // Check on scroll
+            window.addEventListener('scroll', checkScroll);
+
+        });
+          const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    hamburger.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

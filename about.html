@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | G7 Tech</title>
+   <link rel="icon" type="image/png" href="assets/img/logo.jpeg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/about.css" />
+  <link rel="stylesheet" href="assets/css/navFoote.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-logo">
+      <span class="logo-icon">⬢</span>
+      <span class="logo-text">G7 Tech</span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="Services.html">Digital Services</a>
+      <a href="Team.html">Our Team</a>
+      <a href="contact.html">Contact</a>
+       <a href="blog.html">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="https://wa.me/923016871894" class="nav-btn">LET’S LEARN TOGETHER</a>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="container">
+    <h1>About G7 Tech</h1>
+    <p>Empowering businesses with modern digital solutions</p>
+  </div>
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about-section">
+  <div class="container about-grid">
+
+    <!-- TEXT -->
+    <div class="about-text animate fade-left">
+      <span class="about-badge">Who We Are</span>
+      <h2>Building Digital Experiences That Matter</h2>
+
+      <p>
+        <strong>G7 Tech</strong> is a modern digital solutions company dedicated
+        to helping businesses and individuals grow in the digital world.
+        We combine creativity, technology, and strategic thinking to deliver
+        impactful and scalable digital products.
+      </p>
+
+      <p>
+        From professional website development and branding to hosting,
+        documentation, and digital management services, we focus on
+        building future-ready solutions that drive real results.
+      </p>
+
+      <a href="Services.html" class="btn-primary">Explore Our Services</a>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="about-visual animate fade-right">
+      <img src="assets/img/1.png" alt="About G7 Tech">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= VALUES ================= -->
+<section class="values-section">
+  <div class="container values-grid">
+
+    <div class="value-card animate fade-up">
+      <h3>🚀 Our Mission</h3>
+      <p>
+        To deliver reliable and high-quality digital solutions that
+        empower businesses to grow and succeed online.
+      </p>
+    </div>
+
+    <div class="value-card animate fade-up">
+      <h3>🎯 Our Vision</h3>
+      <p>
+        To become a trusted digital partner known for innovation,
+        transparency, and long-term client success.
+      </p>
+    </div>
+
+    <div class="value-card animate fade-up">
+      <h3>💡 Our Values</h3>
+      <p>
+        Innovation, integrity, commitment, and a customer-first
+        approach in everything we do.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats-section">
+  <div class="container stats-grid">
+
+    <div class="stat-box">
+      <h3 class="counter" data-target="50">0</h3>
+      <p>Projects Completed</p>
+    </div>
+
+    <div class="stat-box">
+      <h3 class="counter" data-target="30">0</h3>
+      <p>Happy Clients</p>
+    </div>
+
+    <div class="stat-box">
+      <h3 class="counter" data-target="3">0</h3>
+      <p>Core Team Members</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<!-- CTA -->
+<section class="cta animate">
+  <h2>Start Your Career Today</h2>
+  <a href="contact.html" class="btn-primary">Join Now</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<!-- FOOTER --><!-- FOOTER -->
+<footer>
+
+  <div class="footer-top">
+    <div>
+      <h3>G7 TECH</h3>
+      <p>Your trusted digital partner for modern IT and creative services.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+
+    <div>
+      <h3>Contact Info</h3>
+      <p>📍 Gujranwala, Pakistan</p>
+      <p>📞 0301-6871894</p>
+      <p>✉️info@g7tech.online</p>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 G7 TECH. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+  // Scroll animation
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  document.querySelectorAll(".animate").forEach(el => observer.observe(el));
+
+  // Counter animation
+  const counters = document.querySelectorAll('.counter');
+
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        const target = +counter.dataset.target;
+        let count = 0;
+
+        const update = () => {
+          if (count < target) {
+            count += target / 100;
+            counter.innerText = Math.ceil(count);
+            requestAnimationFrame(update);
+          } else {
+            counter.innerText = target + "+";
+          }
+        };
+        update();
+        counterObserver.unobserve(counter);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => counterObserver.observe(counter));
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    hamburger.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

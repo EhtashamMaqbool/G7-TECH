@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | G7 Tech</title>
+  <link rel="icon" type="image/png" href="assets/img/logo.jpeg">
+
+  <link rel="stylesheet" href="assets/css/navFoote.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <div class="nav-logo">
+        <span class="logo-icon">⬢</span>
+        <span class="logo-text">G7 Tech</span>
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="Services.html">Digital Services</a>
+        <a href="Team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+         <a href="blog.html">Blog</a>
+      </nav>
+
+      <div class="nav-actions">
+    
+        <a href="https://wa.me/923016871894" class="nav-btn">LET’S LEARN TOGETHER</a>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Let’s discuss your ideas and build something amazing together</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- LEFT INFO -->
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>
+          Have a project in mind or need digital services?
+          Reach out to us and our team will respond shortly.
+        </p>
+
+        <div class="info-item">📍 Gujranwala, Pakistan</div>
+        <div class="info-item">📞 +92 301 6871894</div>
+        <div class="info-item">✉️ info@g7tech.online</div>
+      </div>
+      <form class="contact-form" action="Submit.php" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer>
+
+  <div class="footer-top">
+    <div>
+      <h3>G7 TECH</h3>
+      <p>Your trusted digital partner for modern IT and creative services.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+
+    <div>
+      <h3>Contact Info</h3>
+      <p>📍 Gujranwala, Pakistan</p>
+      <p>📞 0301-6871894</p>
+      <p>✉️ info@g7tech.online</p>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 G7 TECH. All Rights Reserved.</p>
+  </div>
+
+</footer>
+</body>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    hamburger.classList.toggle("active");
+  });
+</script>
+
+</html>
